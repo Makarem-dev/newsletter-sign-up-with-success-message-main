@@ -1,9 +1,19 @@
+@font-face {
+  font-family: Roboto;
+  src: url(/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Regular.ttf),
+    url();
+}
+@font-face {
+  font-family: Roboto-bold;
+  src: url(/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Bold.ttf);
+}
 html {
   background-color: hsl(235, 18%, 26%);
 }
 h2 {
   font-size: 45px;
   margin-bottom: 0;
+  font-family: Roboto-bold;
 }
 .container {
   display: flex;
@@ -15,13 +25,16 @@ h2 {
   left: 39%;
   margin: -250px 0 0 -250px;
   border-radius: 25px;
+  box-shadow: 0px 2px 40px 2px rgba(135, 135, 135, 0.5);
 }
 .text-container {
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
   padding: 0px 40px 10px 40px;
+  font-family: roboto;
 }
 .img-container {
   width: 62vh;
@@ -46,8 +59,9 @@ input[type="text"]:focus {
 button {
   width: 100%;
   height: 50px;
+  font-family: roboto;
   background: linear-gradient(270deg, #ff6257 50.12%, #ff3e83 87.16%);
-  box-shadow: 0px 7px 14.7px 4px rgba(255, 91, 100, 0.5);
+  box-shadow: 0px 2px 20px 2px rgba(255, 91, 100, 0.5);
 
   border: none;
   border-radius: 10px;
@@ -63,6 +77,9 @@ button:hover {
 .suggestion > div {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   line-height: 30px;
+}
+svg {
+  width: 20px;
 }
