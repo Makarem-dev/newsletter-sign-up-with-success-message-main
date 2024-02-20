@@ -1,5 +1,5 @@
 'use strict';
 
-const input = document.getElementById("emailtxt").value;
+// const input = document.getElementById("emailtxt").value;
 
 
