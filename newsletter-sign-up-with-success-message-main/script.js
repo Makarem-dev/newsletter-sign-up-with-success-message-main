@@ -57,10 +57,4 @@ const validateForm = function (inputValue) {
 //   }
 // }
 
-// window.open("message.html")
-//   if (result !== true) {
-//     alert.textContent = "wrong email";
-//     console.log(result);
-//   } else if ((result == true)) {
-//     console.log(result);
-//   }
+
