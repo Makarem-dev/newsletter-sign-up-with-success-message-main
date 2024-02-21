@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./styles/message.css" />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <title>Thanks for subscribing!</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-    <link rel="stylesheet" href="./styles/message.css">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <title>Thanks for subscribing!</title>
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+            .attribution a {
+                color: #ff3e83;
+            }
+        </style>
+    </head>
 
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-        .attribution a {
-            color: #ff3e83;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        
-        <div class="text-container">
-            <div><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg></div>
-            <div>
-                <h2>Thanks for subscribing!</h2>
+    <body>
+        <div class="container">
+            <div class="text-container">
+                <div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                    >
+                        <defs>
+                            <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+                                <stop offset="0%" stop-color="#FF6A3A" />
+                                <stop offset="100%" stop-color="#FF527B" />
+                            </linearGradient>
+                        </defs>
+                        <g fill="none">
+                            <circle cx="32" cy="32" r="32" fill="url(#a)" />
+                            <path
+                                stroke="#FFF"
+                                stroke-width="4"
+                                d="m18.286 34.686 8.334 7.98 19.094-18.285"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <div>
+                    <h2>Thanks for subscribing!</h2>
+                </div>
+                <div>
+                    A confirmation email has been sent to
+                    <span id="email-container">ash@loremcompany.com</span> . Please open it and
+                    click the button inside to confirm your subscription.
+                </div>
+                <button>Dismiss message</button>
             </div>
-            <div>  A confirmation email has been sent to <span>ash@loremcompany.com</span> . 
-                Please open it and click the button inside to confirm your subscription.</div>
-            <button>Dismiss message</button>
         </div>
+        <div class="attribution" style="color: white">
+            Coded by <a href="#" target="_blank">Edward-dev</a>
+        </div>
+    </body>
+    <script>
+        const emailContainerEl = document.querySelector("#email-container");
 
-    </div>
-    <div class="attribution" style="color: white;">
+        const searchParams = new URLSearchParams(window.location.search);
 
-        Coded by <a href="#" target="_blank">Edward-dev</a>
-    </div>
-</body>
-<script src="./script.js"></script>
-
+        emailContainerEl.innerHTML = searchParams.get("email");
+    </script>
 </html>

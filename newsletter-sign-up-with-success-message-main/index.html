@@ -1,71 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="stylesheet" href="./styles/reset.css" />
+        <title>Newsletter sign-up</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/reset.css">
-  <title>Newsletter sign-up</title>
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
 
+            .attribution a {
+                color: #ff3e83;
+            }
+        </style>
+    </head>
 
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+    <body>
+        <div class="container">
+            <div class="text-container">
+                <div>
+                    <h2>Stay updated!</h2>
+                </div>
+                <div>Join 60,000+ product managers receiving monthly updates on:</div>
+                <div class="suggestion">
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 21 21"
+                        >
+                            <g fill="none">
+                                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+                            </g>
+                        </svg>
+                        Product discovery and building what matters
+                    </div>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 21 21"
+                        >
+                            <g fill="none">
+                                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+                            </g>
+                        </svg>
+                        Measuring to ensure updates are a success
+                    </div>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="21"
+                            height="21"
+                            viewBox="0 0 21 21"
+                        >
+                            <g fill="none">
+                                <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                                <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
+                            </g>
+                        </svg>
+                        And much more!
+                    </div>
+                </div>
 
-    .attribution a {
-      color: #ff3e83;
-    }
-  </style>
-</head>
+                <div>
+                    <div class="Email">Email address</div>
+                    <input id="EmailTxt" name="name" type="text" required />
+                </div>
+                <button type="submit" id="login">Subscribe to monthly newsletter</button>
+            </div>
+            <div>
+                <img
+                    class="img-container"
+                    src="./assets/images/illustration-sign-up-desktop 1.png"
+                    alt=""
+                />
+            </div>
+        </div>
 
-<body>
-  <div class="container">
-    <div class="text-container">
-      <div>
-        <h2>Stay updated!</h2>
-      </div>
-      <div>Join 60,000+ product managers receiving monthly updates on:</div>
-      <div class="suggestion">
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-            <g fill="none">
-              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-              <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-            </g>
-          </svg>
-          Product discovery and building what matters</div>
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-            <g fill="none">
-              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-              <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-            </g>
-          </svg> Measuring to ensure updates are a success</div>
-        <div><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
-            <g fill="none">
-              <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-              <path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8" />
-            </g>
-          </svg> And much more!</div>
-      </div>
-
-
-      <div>
-        <div class="Email">Email address</div>
-        <input id="EmailTxt" name="name" type="text" required>
-      </div>
-      <button type="submit" id="login" onclick="subBtn()">Subscribe to monthly newsletter</button>
-    </div>
-    <div> <img class="img-container" src="./assets/images/illustration-sign-up-desktop 1.png" alt=""></div>
-  </div>
-
-  <div class="attribution" style="color: white;">
-
-    Coded by <a href="http://github.com/Makarem-dev" target="_blank">Edward-dev</a>
-  </div>
-</body>
-<script src="./script.js"></script>
-
+        <div class="attribution" style="color: white">
+            Coded by <a href="http://github.com/Makarem-dev" target="_blank">Edward-dev</a>
+        </div>
+    </body>
+    <script src="./script.js"></script>
 </html>
