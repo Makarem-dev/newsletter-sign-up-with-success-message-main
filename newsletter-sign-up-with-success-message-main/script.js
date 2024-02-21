@@ -48,13 +48,6 @@ const validateForm = function (inputValue) {
     }
 };
 
-// function subBtn() {
-//   if (input === "") {
-//     alertEL.textContent = "you did not write email";
-//   }
-//   else if(input !== "") {
-//     alertEL.textContent = "Email address";
-//   }
-// }
+
 
 
