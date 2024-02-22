@@ -1,44 +1,59 @@
 @font-face {
   font-family: Roboto;
-  src: url(/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Regular.ttf),
-    url();
+  src: url(/assets/fonts/Roboto-Regular.ttf), url();
 }
 @font-face {
   font-family: Roboto-bold;
-  src: url(/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Bold.ttf);
+  src: url(/assets/fonts/Roboto-Bold.ttf);
 }
 html {
   background-color: hsl(235, 18%, 26%);
 }
 h2 {
   font-size: 45px;
-  margin-top: 0;
   margin-bottom: 0;
   font-family: Roboto-bold;
   color: hsl(234, 29%, 20%);
 }
-
 .container {
   display: flex;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  max-width: 350px !important;
+  max-width: 1000px !important;
   position: absolute;
   top: 50%;
-  left: 52%;
-  margin: -200px 0 0 -200px;
+  left: 39%;
+  margin: -250px 0 0 -250px;
   border-radius: 25px;
   box-shadow: 0px 2px 40px 2px rgba(135, 135, 135, 0.5);
-  padding: 30px;
 }
 .text-container {
-  color: hsl(231, 5%, 28%);
   font-size: 14px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
-  padding: 20px;
+  padding: 0px 40px 10px 40px;
   font-family: roboto;
+}
+.img-container {
+  width: 62vh;
+  padding: 20px;
+}
+input {
+  margin-top: 10px;
+  width: 94%;
+  height: 50px;
+  border: 1.2px solid rgb(218, 218, 218);
+  border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  padding-left: 20px;
+}
+
+input[type="text"]:focus {
+  border: 1.2px solid #ff3e83;
+  outline: none;
 }
 
 button {
@@ -47,6 +62,7 @@ button {
   font-family: roboto;
   background: linear-gradient(270deg, #ff6257 50.12%, #ff3e83 87.16%);
   box-shadow: 0px 2px 20px 2px rgba(255, 91, 100, 0.5);
+
   border: none;
   border-radius: 10px;
   color: white;
@@ -55,10 +71,15 @@ button {
 button:hover {
   background: linear-gradient(60deg, #ff6257 50.12%, #ff3e83 87.16%);
 }
-
-svg {
-  width: 50px;
+.suggestion {
+  padding-bottom: 20px;
 }
-.text-container  span {
-  font-weight: bold;
+.suggestion > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  line-height: 30px;
+}
+svg {
+  width: 20px;
 }

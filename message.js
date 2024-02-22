@@ -5,5 +5,5 @@ emailContainerEl.innerHTML = searchParams.get("email");
 
 const dismissBtn = document.getElementById("Dismiss");
 dismissBtn.addEventListener("click", () => {
-    window.location.href = `index.html`;
+  window.location.href = `index.html`;
 });
