@@ -46,19 +46,15 @@
                 <span id="email-container">ash@loremcompany.com</span> . Please open it and
                 click the button inside to confirm your subscription.
             </div>
-            <button>Dismiss message</button>
+            <button id="Dismiss">Dismiss message</button>
         </div>
     </div>
     <div class="attribution" style="color: white">
         Coded by <a href="#" target="_blank">Edward-dev</a>
     </div>
 </body>
-<script>
-    const emailContainerEl = document.querySelector("#email-container");
+<script src="./message.js">
 
-    const searchParams = new URLSearchParams(window.location.search);
-
-    emailContainerEl.innerHTML = searchParams.get("email");
 </script>
 
 </html>

@@ -12,7 +12,7 @@ button.addEventListener("click", () => {
   const isValid = validateForm(input.value);
 
   if (isValid) {
-    window.location.href = `message.html?email=${input.value}&test=2&x=33`;
+    window.location.href = `message.html?email=${input.value}`;
     // window.open("message.html");
   }
 });
